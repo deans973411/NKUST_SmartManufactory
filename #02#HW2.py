@@ -1,54 +1,54 @@
-#班級:四模四丙 學號:C107147319 姓名:林鼎鈞
-print("班級:四模四丙 學號:C107147319 姓名:林鼎鈞")
+#Class: MDE4-3 Name: Dean Lin
+print("Class: MDE4-3 Name: Dean Lin")
 
-#1-執行1至100迴圈，並顯示21至50間奇數並計算總合
-print("1-執行1至100迴圈，並顯示21至50間奇數並計算總合")   
+#1-Run the Prograam count from 1 to 100, show the odd number between 21 and 50 and calculate their summation.
+print("1-Run the Program count from 1 to 100, show the odd number between 21 to 50 and calculate their summation.")   
 
-i1 = 0
-SUM1 = 0
-for i1 in range(1, 100, 1):             #執行1到100迴圈
-    if i1 >= 21 and i1 <= 50:           #定義區間
-        if i1 % 2 == 1:                 #定義奇數
+i1 = 0                                  #Defind data type in integer, reset counting loop
+SUM1 = 0                                #Defind data type in integer, summation data from 0 
+for i1 in range(1, 100, 1):             #Count from 1 to 100: Range(initial, final, count by)
+    if i1 >= 21 and i1 <= 50:           #Defind the Range which form 21 to 50
+        if i1 % 2 == 1:                 #Defind odd number
             print(i1," ", end='')
-            SUM1 += i1
-print('\n21至50奇數總和為', SUM1)
+            SUM1 += i1                  #Calculate the summation
+print('\nThe odd number summation between 21 to 50 is:', SUM1)
 print('\n')
 
 
-#2排版整齊的9x9乘法表
-print("2-排版整齊的9x9乘法表")
+#2-Multiplication Table (9x9) arrange in order
+print("2-Multiplication Table (9x9) arrange in order")
 
 NUM1 = 1
-while NUM1 < 10:
-    NUM1 += 1
+while NUM1 < 10:                        #Defind the Multiplication table final number in 9
+    NUM1 += 1                           #Defind the Multiplication tbale initial number in 2
     for y in range(NUM1-1, NUM1):
         for x in range(2, 10):
-            print('{}x{}={:2} '.format(x, y, x*y), end='')
+            print('{}x{}={:2} '.format(x, y, x*y), end='')      #Setup Table format
     print('\n\n')
 
 
-#3-輸入10位同學成績，印出全班最高分、最低分與不級格人數
-print("3-輸入10位同學成績，印出全班最高分、最低分與不級格人數")
-print("***提醒您，設定至多只能輸入10次喔***")
+#3-Type in 10 students' scores, print tiptop score, minima score and reject number
+print("3-type in 10 students' score, print tiptop score, minima core and reject number")
+print("***Remind, the maxima type in data be set less than 10 times***")
 
 i2 = 1
 NUM2 = 0
 CLASS_SCORE = list()
-CLASS_SCORE.append(input("請輸入成績< 1 >\n"))
+CLASS_SCORE.append(input("Please ttype in Score< 1 >\n"))
 while True:
     i2 += 1
     if i2 > 10:
-        print("您輸入了10筆成績")
+        print("You type in 10 Score")
         break
-    print("請輸入成績<", i2, ">")
+    print("Please type in Score<", i2, ">")
     Std_SCORE = input()
 #    Std_SCORE = int(Std_SCORE)
 #    if Std_SCORE >= 100 or Std_SCORE <= 0:
-#        print("您輸入了異常成績，程式終止(SCORE>100, SCORE<0)")
+#        print("You type in Failed Score，the program stoping(SCORE>100, SCORE<0)")
 #        break
     if Std_SCORE == "":
-        print("您輸入空白成績，提早終止")
-        print("您輸入了", i2-1,"筆資料")
+        print("You type in blank cell, early stop")
+        print("you type in", i2-1,"data")
         break
     else:
         CLASS_SCORE.append(Std_SCORE)
@@ -58,9 +58,9 @@ for Failed_SCORE in CLASS_SCORE:
     if Failed_SCORE < 60:
         NUM2 += 1
   
-print('您輸入的成績是:', CLASS_SCORE)
-print("本班最高分為:", max(CLASS_SCORE), " 本班最低分為:", min(CLASS_SCORE))
-print("本班不及格人數為", NUM2)
+print('The class score data:', CLASS_SCORE)
+print("The tiptop score in class:", max(CLASS_SCORE), " the minima score in class:", min(CLASS_SCORE))
+print("Reject number in class", NUM2)
 print("\n\n")
 
 
