@@ -53,12 +53,13 @@ print('總共輸出', i1, '筆資料')
 print('1-a 查詢三科成績皆90分以上人數')
 '''
 The OLD version>>
-    if i2 <= i1:
+    if i2 <= i1:                                    #If loop to count how many
         a1 = Ch[i2]
         b1 = En[i2]
         c1 = Ma[i2]
         if a1 >= 90 and b1 >= 90 and c1 >= 90:
             NUM2 += 1
+        i2 += 1                                     #counter
 <<
 In the loop, if you use 'if loop' with counter，the program will present you-
     IndexError: list index out of range
