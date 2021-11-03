@@ -2,7 +2,7 @@
 ### Dean Lin  
 Foundation of Smart Machinery and Smart Manufactory, Lab on Nontraditional Machining Processes and Intelligent Mechatronics.  
 
-In this class will teach Python basic technic, data strusture and Neural Network, start from trandition neural network MLP(multilayer perceptron) then practice on MNIST basic convolation neural network, step by step understanding the neural network creating process and application.
+In this class will teach Python basic technic, data strusture and Neural Network, start from trandition neural network MLP(multilayer perceptron) then practice on MNIST basic convolation neural network, step by step understanding the neural network creat process and application.
 
 A place which store my collage homework
 
