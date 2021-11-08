@@ -28,7 +28,11 @@ A place which store my collage homework
          
 - **Chepter 4 - File Management**
    - #05# File Edit  
-(`open`, `write`, `read`, `readline`, `close`)
+(`open`, `write`, `read`, `readline`, `close`)  
+
+- **chepter 5 - MLP Implement**  
+   - #06# Keras' Hello World
+(`import keras`, `import matplotlib`)
 
 
 -----------------------------------
