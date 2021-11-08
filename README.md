@@ -31,7 +31,7 @@ A place which store my collage homework
 (`open`, `write`, `read`, `readline`, `close`)  
 
 - **chepter 5 - MLP Implement**  
-   - #06# Keras' Hello World
+   - #06# Keras' Hello World  
 (`import keras`, `import matplotlib`)
 
 
