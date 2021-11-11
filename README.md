@@ -32,7 +32,7 @@ A place which store my collage homework
 
 - **chepter 5 - MLP Implement**  
    - #06# Keras' Hello World  
-(`import keras`, `import matplotlib`)
+(`import keras`, `import matplotlib`, `image`, `label`, `feature preprocess`, `normalize`)
 
 
 -----------------------------------
