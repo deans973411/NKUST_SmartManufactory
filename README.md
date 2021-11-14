@@ -33,6 +33,8 @@ A place which store my collage homework
 - **chepter 5 - MLP Implement**  
    - #06# Keras' Hello World  
 (`import keras`, `import matplotlib`, `image`, `label`, `feature preprocess`, `normalize`)
+   - #07# Build Basic I/O Layer
+(`np_utils`, `model`, `Sequential`, `Dense`, `compile`)
 
 
 -----------------------------------
