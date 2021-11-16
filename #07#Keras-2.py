@@ -65,3 +65,43 @@ train_histiry = model.fit(x = train_feature_normalize,
 #$ acc: use training set get the accuracy
 #$ val_loss:use testing data get the loss function
 #$ Val_acc: use testing data get the accuracy
+
+#(4)Predict Accuracy
+'''
+Predict model loss fuction difference and accuracy by 'evaluate',
+after evaluate, it will feedback the result.
+
+$> Test = model.evaluate(test_feature_normalize, test_label_onehot)
+                        0 element = loss function difference/ 1 element = accuracy
+'''
+scores = model.evaluate(test_feature_normalize, test_label_onehot)
+print('n\Loss Rate=', scores[0])
+print('n\Accuracy Rate=', scores[1])
+
+#(5)Image Test
+'''
+We defind a prediction function name 'plot_image_label', module by matplotlib.
+We import this plugin first, and defind this function in image size, image number, umage type
+, argument, and verify image with its label.
+'''
+
+import matplotlib.pyplot as plt                                     #Matplotlib is a data image& vision plugin
+
+def plot_images_labels(images,labels,prediction,start_id,num=10):   #Defind a command for show verify result, show image num as '10'
+    fig=plt.gcf()
+    fig.set_size_inches(12,14)                                      #Setting image size
+    if num>25:                                                      #Max image number at 25
+        num=25
+    for i in range(0,num):                                          #This loop process for 'show image' and 'show verify label' until num(we set 10)
+        ax=plt.subplot(5,5,1+i)                                     #All image distribution as 5 * 5
+        ax.imshow(images[start_id], cmap='binary')                  #Color on image as Gray
+        if len(prediction) > 0:
+            title = 'label = ' + str(labels[i])                  #Show this image verify label
+        ax.set_title(title,fontsize=12)
+        ax.set_xticks([])                                           #For this window X-axis no scale
+        ax.set_yticks([])                                           #For this window Y-axis no scale
+        start_id += 1                                               #Counter plus 1
+    plt.show()                                                  #After process, show it
+prediction = model.predict(test_feature_normalize)
+#print(prediction)
+plot_images_labels(test_feature, test_label, prediction, 0)         #input argument and run this function
