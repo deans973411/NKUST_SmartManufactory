@@ -70,7 +70,7 @@ Notice:Needing images at less 10, all of the image file format with: <realnumber
 like: 1_2.jpg is draw number1 data2 file 
 '''
 import glob
-import cv2
+import cv2      #you should pip install opencv-python first
 
 files = glob.glob("Kera3need_imagedata\*.jpg")
 my_feature = []
