@@ -14,6 +14,7 @@ So the process like:
 (3)Training Molde: Training data set Feature and Label.
 (4)Predict accuracy: Predict model accuracy with testing set.
 (5)Image Test: Use this model predict on a number inage.
+(6)Save Model: Save model at the same place
 '''
 import numpy as np
 from keras.datasets import mnist 
@@ -105,3 +106,12 @@ def plot_images_labels(images,labels,prediction,start_id,num=10):   #Defind a co
 prediction = model.predict(test_feature_normalize)
 #print(prediction)
 plot_images_labels(test_feature, test_label, prediction, 0)         #input argument and run this function
+
+#(6) Save Model
+'''
+Keras save model with format 'HDF5' .h5 as extension name
+'''
+model.save('Mnist_mlp_model.h5')
+print('Save Mnist_mpl_model.h5 done!')
+del model
+#$ Save file at program local
