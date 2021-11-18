@@ -113,5 +113,5 @@ Keras save model with format 'HDF5' .h5 as extension name
 '''
 model.save('Mnist_mlp_model.h5')
 print('Save Mnist_mpl_model.h5 done!')
-del model
+del model                                                            #Just Del list on 'model', no clear anyother
 #$ Save file at program local
