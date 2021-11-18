@@ -30,12 +30,13 @@ A place which store my collage homework
    - #05# File Edit  
 (`open`, `write`, `read`, `readline`, `close`)  
 
-- **chepter 5 - MLP Implement**  
+- **Chepter 5 - MLP Implement**  
    - #06# Keras' Hello World  
 (`import keras`, `import matplotlib`, `image`, `label`, `feature preprocess`, `normalize`)  
-   - #07# Build Basic I/O Layer  
-(`np_utils`, `model`, `Sequential`, `Dense`, `compile`)  
-
+   - #07# Build Basic I/O Layer And Output Model  
+(`np_utils`, `model`, `Sequential`, `Dense`, `compile`, `model.save`, `del model`)  
+   - #08# Reading Model And Predict On Myself Image  
+(`load_model`, `glob`, `OpenCV`, `np.array`)  
 
 -----------------------------------
 TO DO LIST
