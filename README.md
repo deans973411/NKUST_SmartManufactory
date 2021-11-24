@@ -37,6 +37,8 @@ A place which store my collage homework
 (`np_utils`, `model`, `Sequential`, `Dense`, `compile`, `model.save`, `del model`)  
    - #08# Reading Model And Predict On Myself Image  
 (`load_model`, `glob`, `OpenCV`, `np.array`)  
+   - #09# Use Weights For Continue Training Or Accumulate Progress  
+(`model.save_weights`, `model.load_weights`, `model.summary`)  
 
 -----------------------------------
 TO DO LIST
