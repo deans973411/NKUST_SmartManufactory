@@ -15,6 +15,7 @@ So the process like:
 (4)Predict accuracy: Predict model accuracy with testing set.
 (5)Image Test: Use this model predict on a number inage.
 (6)Save Model: Save model at the same place
+(7)Save Model Weigths: Save training progress in h5 for next training
 '''
 import numpy as np
 from keras.datasets import mnist 
@@ -113,5 +114,16 @@ Keras save model with format 'HDF5' .h5 as extension name
 '''
 model.save('Mnist_mlp_model.h5')
 print('Save Mnist_mpl_model.h5 done!')
-del model                                                            #Just Del list on 'model', no clear anyother
+#del model
 #$ Save file at program local
+
+#(7) Save Model Weigths
+'''
+We can train as accumulation method to shorten training time when training set huge
+Increase training time can get better effect
+'''
+model.save_weights("Mnist_mlp_model_2_weights.h5")              #Here need you comp. in HDF5, if save other type, the file will distribute to 3 files:"*.data-00000-of-00001*, "*.index", "checkpoint"
+print('Save weight in Mnist_mlp_model_2_weights.h5 done!')
+del model
+print('Delete model done!')
+#When you save weight done, mean it can be used by next training.
