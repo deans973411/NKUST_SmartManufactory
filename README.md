@@ -40,6 +40,11 @@ A place which store my collage homework
    - #09# Use Weights For Continue Training Or Accumulate Progress  
 (`model.save_weights`, `model.load_weights`, `model.summary`)  
 
+- **Chepter 6 - Neural Network**  
+   - #10# First CNN  
+(`Conv2D`, `Pooling`, `Dropout`, `Flatten`, `Dense`)  
+
+
 -----------------------------------
 TO DO LIST
 1. mechine learning structure
