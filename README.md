@@ -42,7 +42,11 @@ A place which store my collage homework
 
 - **Chepter 6 - Neural Network**  
    - #10# First CNN  
-(`Conv2D`, `Pooling`, `Dropout`, `Flatten`, `Dense`)  
+(`Conv2D`, `Pooling`, `Dropout`, `Flatten`, `Dense`) 
+   - #11# First RNN  
+(`SimpleRNN`)   
+   - #12# First RNN-LSTM  
+(`RNN-LSTM`)  
 
 
 -----------------------------------

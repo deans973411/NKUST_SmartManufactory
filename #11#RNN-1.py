@@ -16,8 +16,17 @@ test_label_onehot = np_utils.to_categorical(test_label)
 #Build recurrent nuarl network
 from keras.models import Sequential
 from keras.layers import SimpleRNN, Dropout, Dense
-
+'''
+RNN(Recurrent Nuarl Network) front data associated with last data, it good on language translate, weather predict and stock tarde
+'''
 model = Sequential()
+'''
+model.add(SimpleRNN(
+    input_shape=(Time_steps,Input_size),
+    units=Cell_size,
+    unroll=Boolean_value
+))
+'''
 model.add(SimpleRNN(input_shape=(28, 28), units=256, unroll=True))
 model.add(Dropout(0.1))
 model.add(Dense(units=10, kernel_initializer='normal', activation='softmax'))
